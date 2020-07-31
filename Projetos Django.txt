@@ -1,0 +1,15 @@
+Antes de iniciar um projeto python precisamos do pipenv:
+	$ pip install pipenv //apenas na primeira vez
+
+Criando ambiente virtual:
+	$ pipenv --python 3.8.3
+	-Pelo fato do Python ter diversos pacotes instalados na sua "raiz", os desenvolvedores criaram a necessidade
+	de ter vários ambientes separados, ou seja, eu posso ter instalado 19 bibliotecas mas para certo programa
+	só vou utilizar 3 delas, ter todas as 19 listadas iria comprometer em peso minha aplicação.
+
+Dai entramos na raiz do projeto e damos:
+	$ pipenv install django
+	-Para poder ser instalado na lista que o pipenv criou
+
+Para iniciar o projeto
+	$ pipenv run django-admin startproject nomedosite
