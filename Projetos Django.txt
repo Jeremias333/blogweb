@@ -1,3 +1,5 @@
+#pip install -U --no-cache-dir spacy #para baixar fora do cache.
+
 Antes de iniciar um projeto python precisamos do pipenv:
 	$ pip install pipenv //apenas na primeira vez
 
@@ -13,3 +15,14 @@ Dai entramos na raiz do projeto e damos:
 
 Para iniciar o projeto
 	$ pipenv run django-admin startproject nomedosite
+
+Um projeto pode ter muitos apps, por isso vamos criar um app/módulo dentro do nosso projeto.
+	$ pipenv run django-admin startproject blog
+	ou
+	$ python manage.py startapp blog
+
+O migrate deverá ser utilizado para ligar as classes modelos ao banco de dados
+	$ python manage.py migrate
+
+Criando um usuário admin no django, é perfeito para saber alterações e etc.
+	python manage.py createsuperuser
