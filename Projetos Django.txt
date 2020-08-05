@@ -25,4 +25,7 @@ O migrate deverá ser utilizado para ligar as classes modelos ao banco de dados
 	$ python manage.py migrate
 
 Criando um usuário admin no django, é perfeito para saber alterações e etc.
-	python manage.py createsuperuser
+	$ python manage.py createsuperuser
+
+Após criar um model é necessário fazer o makemigrations para "commitar" as alterações.
+	$ python manage.py makemigrations
