@@ -17,7 +17,7 @@ Para iniciar o projeto
 	$ pipenv run django-admin startproject nomedosite
 
 Um projeto pode ter muitos apps, por isso vamos criar um app/módulo dentro do nosso projeto.
-	$ pipenv run django-admin startproject blog
+	$ pipenv run django-admin startapp blog
 	ou
 	$ python manage.py startapp blog
 
@@ -29,3 +29,6 @@ Criando um usuário admin no django, é perfeito para saber alterações e etc.
 
 Após criar um model é necessário fazer o makemigrations para "commitar" as alterações.
 	$ python manage.py makemigrations
+
+Criar um requirements.txt
+	$ pipenv run pip freeze > requirements.txt
