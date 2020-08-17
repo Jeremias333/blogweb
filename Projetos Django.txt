@@ -9,17 +9,18 @@ Criando ambiente virtual:
 	de ter vários ambientes separados, ou seja, eu posso ter instalado 19 bibliotecas mas para certo programa
 	só vou utilizar 3 delas, ter todas as 19 listadas iria comprometer em peso minha aplicação.
 
+Para utilizar o ambiente virtual:
+	$pipenv run comando
+
 Dai entramos na raiz do projeto e damos:
 	$ pipenv install django
 	-Para poder ser instalado na lista que o pipenv criou
 
 Para iniciar o projeto
-	$ pipenv run django-admin startproject nomedosite
+	$ pipenv run django-admin startproject project
 
 Um projeto pode ter muitos apps, por isso vamos criar um app/módulo dentro do nosso projeto.
-	$ pipenv run django-admin startapp blog
-	ou
-	$ python manage.py startapp blog
+	$ pipenv run python ../manage.py startapp main
 
 O migrate deverá ser utilizado para ligar as classes modelos ao banco de dados
 	$ python manage.py migrate
@@ -32,3 +33,7 @@ Após criar um model é necessário fazer o makemigrations para "commitar" as al
 
 Criar um requirements.txt
 	$ pipenv run pip freeze > requirements.txt
+
+Para instalar dependencias:
+	entre na raiz do projeto e use:
+	$pipenv install --skip-lock
